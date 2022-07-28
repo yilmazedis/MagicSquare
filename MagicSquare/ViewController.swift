@@ -85,6 +85,23 @@ class ViewController: UIViewController {
         SquareButton.setBackgroundColor(.random(), for: .normal)
     }
     
+    //        let randomFloat = Float.random(in: 1..<10)
+    //        let randomDouble = Double.random(in: 1...100)
+    //        let randomCGFloat = CGFloat.random(in: 1...1000)
+    //        let randomBool = Bool.random()
+    //
+    //        let numbers = [1, 2, 3]
+    //        let shuffledNumbers = (numbers as NSArray).shuffled() as! [Int]
+    //
+    //        var albums = ["Red", "1989", "Reputation"]
+    //        // shuffle in place
+    //        albums.shuffle()
+    //        // get a shuffled array back
+    //        let shuffled = albums.shuffled()
+    //
+    //        if let random = albums.randomElement() {
+    //            print("The random album is \(random).")
+    //        }
     @objc private func squareButtonTap() {
         SquareButton.setTitle("\(Int.random(in: 1...6))", for: .normal)
     }
