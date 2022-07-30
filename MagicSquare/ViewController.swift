@@ -7,42 +7,6 @@
 
 import UIKit
 
-extension CGFloat {
-    static func random() -> CGFloat {
-        return CGFloat(arc4random()) / CGFloat(UInt32.max)
-    }
-}
-
-extension UIColor {
-    static func random() -> UIColor {
-        return UIColor(
-           red:   .random(),
-           green: .random(),
-           blue:  .random(),
-           alpha: 1.0
-        )
-    }
-}
-
-extension UIButton {
-    func setBackgroundColor(_ backgroundColor: UIColor, for state: UIControl.State) {
-        self.setBackgroundImage(.pixel(ofColor: backgroundColor), for: state)
-    }
-}
-
-extension UIImage {
-  public static func pixel(ofColor color: UIColor) -> UIImage {
-    let pixel = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
-    UIGraphicsBeginImageContext(pixel.size)
-    defer { UIGraphicsEndImageContext() }
-
-    guard let context = UIGraphicsGetCurrentContext() else { return UIImage() }
-    context.setFillColor(color.cgColor)
-    context.fill(pixel)
-    return UIGraphicsGetImageFromCurrentImageContext() ?? UIImage()
-  }
-}
-
 class ViewController: UIViewController {
     
     private lazy var SquareButton: UIButton = {
@@ -57,9 +21,7 @@ class ViewController: UIViewController {
     }()
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
+        super.viewDidLoad()        
         let swipeGestureRecognizerUp = UISwipeGestureRecognizer(target: self,
                                                                 action: #selector(didSwipe(_:)))
 
