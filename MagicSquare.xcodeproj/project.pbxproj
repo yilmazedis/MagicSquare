@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019637A5290C20D30001174E /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019637A4290C20D30001174E /* Toast.swift */; };
 		019E215C2893226800DC5C75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E215B2893226800DC5C75 /* AppDelegate.swift */; };
 		019E215E2893226800DC5C75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E215D2893226800DC5C75 /* SceneDelegate.swift */; };
 		019E21602893226800DC5C75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 019E215F2893226800DC5C75 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		019637A4290C20D30001174E /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		019E21582893226800DC5C75 /* MagicSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MagicSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		019E215B2893226800DC5C75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		019E215D2893226800DC5C75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		019637A3290C20C00001174E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				019637A4290C20D30001174E /* Toast.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		019E214F2893226800DC5C75 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		019E215A2893226800DC5C75 /* MagicSquare */ = {
 			isa = PBXGroup;
 			children = (
+				019637A3290C20C00001174E /* Utils */,
 				019E216F2893387A00DC5C75 /* Extensions */,
 				019E215B2893226800DC5C75 /* AppDelegate.swift */,
 				019E215D2893226800DC5C75 /* SceneDelegate.swift */,
@@ -159,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				019E2173289338BD00DC5C75 /* UIColor+Random.swift in Sources */,
+				019637A5290C20D30001174E /* Toast.swift in Sources */,
 				019E21772893391400DC5C75 /* UIImage+Pixel.swift in Sources */,
 				019E21602893226800DC5C75 /* ViewController.swift in Sources */,
 				019E2175289338F000DC5C75 /* UIButton+SetBackgroundColor.swift in Sources */,

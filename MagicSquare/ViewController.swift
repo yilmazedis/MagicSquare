@@ -69,6 +69,7 @@ class ViewController: UIViewController {
     //        }
     @objc private func squareButtonTap() {
         SquareButton.setTitle("\(Int.random(in: 1...6))", for: .normal)
+        Toast.show(message: "Hello Toast", on: view)
     }
 }
 
