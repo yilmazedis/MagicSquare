@@ -25,9 +25,10 @@ class Toast {
         
         baseView.addSubview(containerView)
         containerView.translatesAutoresizingMaskIntoConstraints = false
-        containerView.leadingAnchor.constraint(equalTo: baseView.leadingAnchor, constant: 65).isActive = true
-        containerView.trailingAnchor.constraint(equalTo: baseView.trailingAnchor, constant: -65).isActive = true
-        containerView.bottomAnchor.constraint(equalTo: baseView.bottomAnchor, constant: -75).isActive = true
+        containerView.leadingAnchor.constraint(greaterThanOrEqualTo: baseView.leadingAnchor, constant: 65).isActive = true
+        containerView.trailingAnchor.constraint(lessThanOrEqualTo: baseView.trailingAnchor, constant: -65).isActive = true
+        containerView.bottomAnchor.constraint(equalTo: baseView.safeAreaLayoutGuide.bottomAnchor, constant: -10).isActive = true
+        containerView.centerXAnchor.constraint(equalTo: baseView.centerXAnchor).isActive = true
 
         containerView.addSubview(toastLabel)
         toastLabel.translatesAutoresizingMaskIntoConstraints = false

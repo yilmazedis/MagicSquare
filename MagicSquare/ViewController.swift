@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         btn.addTarget(self, action: #selector(squareButtonTap), for: .touchUpInside)
         return btn
     }()
+    
+    var message = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()        
@@ -69,7 +71,8 @@ class ViewController: UIViewController {
     //        }
     @objc private func squareButtonTap() {
         SquareButton.setTitle("\(Int.random(in: 1...6))", for: .normal)
-        Toast.show(message: "Hello Toast", on: view)
+        message += "Hello "
+        Toast.show(message: message, on: view)
     }
 }
 
