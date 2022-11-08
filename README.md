@@ -6,6 +6,8 @@ Tap for random numbers between 1 to 6
 Swipe up for random colors
 
 Added Toast Message.
+It works on Landscape mode very well. Toast message width is grew according to length of text.
+If it is so long, Toast message is become more than one line
 
 ## Appearances
 
